@@ -21,10 +21,11 @@ let stocks = await Promise.all([
     d3.csv("data/GOOG.csv").then(data => ({ name: "GOOG", values: data })),
     // TODO: Load AMZN.csv with name "AMZN"
     d3.csv("data/AMZN.csv").then(data => ({ name: "AMZN", values: data })),
-    // TODO: LOAD IBM.csv with name "IBM"
-    d3.csv("data/IBM.csv").then(data => ({ name: "IBM", values: data })),
     // TODO: LOAD MSFT.csv with name "MSFT"
     d3.csv("data/MSFT.csv").then(data => ({ name: "MSFT", values: data })),
+    // TODO: LOAD IBM.csv with name "IBM"
+    d3.csv("data/IBM.csv").then(data => ({ name: "IBM", values: data })),
+
 ]);
 
 console.log("Loaded stocks:", stocks);
@@ -191,7 +192,7 @@ svg.append('text')
     .attr('text-anchor', 'middle')
     .style('font-size', '18px')
     .style('font-weight', 'bold')
-    .text('Stock Prices Over Time (2020-2024)'); // TODO: add your title
+    .text('Stock Closing Prices (2010-2020)'); // TODO: add your title
 
 // X Axis Label
 // TODO: Add a label below the x-axis
