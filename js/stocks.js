@@ -202,7 +202,7 @@ svg.append('text')
     .attr('y', height + margin.bottom - 10) // TODO: put the label below x-xis
     .attr('text-anchor', 'middle')
     .style('font-size', '14px')
-    .text('Year'); // TODO: add axis label
+    .text('Date'); // TODO: add axis label
 
 // Y Axis Label
 // TODO: Add a label to the left of the y-axis (rotated)
